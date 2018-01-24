@@ -11,16 +11,19 @@ This webpage will show you how to use an image-processing algorithm for the retr
 Reyes-Aldasoro, C.C., Retrospective shading correction algorithm based on signal envelope estimation, Electronics Letters (2009), 23 April 2009; Vol. 45, Issue 9, p. 454-456.
 </b>
 
+
 Loading the data into Matlab
 
 There are two ways to load the data, one is by typing in the command window, for example, to load the image called "image7B.png" you type:
 
 dataIn=imread('image7B.png');
-This command would read the tif image and put the values inside the variable called "dataIn". You can change the name of the variable at will. You can also drag and drop, refer to the manual for chromaticity. R*E*M*E*M*B*E*R use only a-z, A-Z, numbers or _ for your file names! myFileName.tif is fine, this%file\of*mine.jpg will create problems in some systems.
+
+This command would read the tif image and put the values inside the variable called "dataIn". You can change the name of the variable at will. You can also drag and drop, refer to the manual for chromaticity. REMEMBER, use only a-z, A-Z, numbers or _ for your file names! myFileName.tif is fine, this%file\of\*mine.jpg will create problems in some systems.
 
 To visualise your image you can open a figure and display it like this:
 
 figure(1)
+
 imagesc(dataIn)
 
 ![Screenshot](userManualShading_01.png)
@@ -31,9 +34,11 @@ Removing the shading
 To remove the shading of your image simply type:
 
 [dataOut,errSurface,errSurfaceMin,errSurfaceMax] = shadingCorrection(dataIn);
+
 The Image with the shading removed is stored in "dataOut". To visualise the result type:
 
 figure(2)
+
 imagesc(dataOut/255);
 
 
@@ -47,8 +52,11 @@ To view the effect of the shading and its removal try this:
 [rows,columns,levels]  = size(dataIn);
 
 figure(3)
+
 plot([1:columns],dataIn(1,:,1),'r',[1:columns],dataIn(1,:,2),'g',[1:columns],dataIn(1,:,3),'b');
+
 grid on
+
 axis([1 columns 0 255])
 
 
@@ -56,8 +64,11 @@ axis([1 columns 0 255])
 
 
 figure(4)
+
 plot([1:columns],dataOut(1,:,1),'r',[1:columns],dataOut(1,:,2),'g',[1:columns],dataOut(1,:,3),'b');
+
 grid on
+
 axis([1 columns 0 255])
  
  
