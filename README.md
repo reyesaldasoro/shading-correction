@@ -7,7 +7,9 @@ A common phenomenon in biomedical imaging is the presence of spurious intensity 
 
 This webpage will show you how to use an image-processing algorithm for the retrospective shading correction. The algorithm is fully automatic, the details are described in this paper:
 
+<b>
 Reyes-Aldasoro, C.C., Retrospective shading correction algorithm based on signal envelope estimation, Electronics Letters (2009), 23 April 2009; Vol. 45, Issue 9, p. 454-456.
+</b>
 
 Loading the data into Matlab
 
