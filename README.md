@@ -20,7 +20,7 @@ To visualise your image you can open a figure and display it like this:
 
 figure(1)
 imagesc(dataIn)
-
+![Screenshot](userManualShading_01.png)
 
 
 Removing the shading
