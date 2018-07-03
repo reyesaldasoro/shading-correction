@@ -26,7 +26,7 @@ figure(1)
 
 imagesc(dataIn)
 
-![Screenshot](userManualShading_01.png)
+![Screenshot](Figures/userManualShading_01.png)
 
 
 Removing the shading
@@ -42,7 +42,7 @@ figure(2)
 imagesc(dataOut/255);
 
 
-![Screenshot](userManualShading_02.png)
+![Screenshot](Figures/userManualShading_02.png)
 
 
 The result (dataOut) is a "double" variable, while the input is a "iunt8" that is why you need the 255 in the end of the imagesc command. Do not worry if you do not understand why, it works fine like that.
@@ -60,7 +60,7 @@ grid on
 axis([1 columns 0 255])
 
 
-![Screenshot](userManualShading_03.png)
+![Screenshot](Figures/userManualShading_03.png)
 
 
 figure(4)
@@ -70,11 +70,11 @@ plot([1:columns],dataOut(1,:,1),'r',[1:columns],dataOut(1,:,2),'g',[1:columns],d
 grid on
 
 axis([1 columns 0 255])
- 
- 
-![Screenshot](userManualShading_04.png)
- 
- 
+
+
+![Screenshot](Figures/userManualShading_04.png)
+
+
 It is evident the difference in shading between both images. To visualise the shading component itself try:
 
 figure(5)
@@ -82,5 +82,4 @@ figure(5)
 mesh(errSurface(:,:,1))
 
 
-![Screenshot](userManualShading_05.png)
-
+![Screenshot](Figures/userManualShading_05.png)
